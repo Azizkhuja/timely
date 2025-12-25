@@ -1,51 +1,15 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'maven-publish'
-
-android {
-    namespace 'io.timely.sdk'
-    compileSdk 33
-
-    defaultConfig {
-        minSdk 24
-        consumerProguardFiles "consumer-rules.pro"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20'
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'io.timely'
-                artifactId = 'sdk'
-                version = '1.0.0'
-            }
-        }
-    }
-}
-
-dependencies {
-    implementation 'androidx.core:core-ktx:1.10.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    
-    // Firebase Messaging
-    api platform('com.google.firebase:firebase-bom:32.1.1')
-    api 'com.google.firebase:firebase-messaging-ktx'
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
