@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:5:5-13:19
+service#io.timely.sdk.TimelyMessagingService
+ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:6:9-12:19
+	android:exported
+		ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:8:13-37
+	android:name
+		ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:7:13-51
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:9:13-11:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:10:17-78
+	android:name
+		ADDED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml:10:25-75
+uses-sdk
+INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml
+INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/aziz/Desktop/Project/anroid/Timely/timely/src/main/AndroidManifest.xml
